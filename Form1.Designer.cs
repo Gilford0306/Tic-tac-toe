@@ -1,4 +1,6 @@
-﻿namespace Tic_tac_toe
+﻿using System.Drawing;
+
+namespace Tic_tac_toe
 {
     partial class Form1
     {
@@ -31,7 +33,9 @@
             this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.Text = "Game";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.BackColor = Color.DeepSkyBlue;
         }
 
         #endregion
