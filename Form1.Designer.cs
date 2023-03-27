@@ -197,7 +197,114 @@ namespace Tic_tac_toe
 
 
             this.Controls.Add(btn_end);
+            btn_end.Click += (e, sender) =>
+            {
+                if (btn1.Text == "0" && btn2.Text == "0" && btn3.Text == "0" && btn1.Enabled == false && btn2.Enabled == false && btn3.Enabled == false || btn4.Text == "0" && btn5.Text == "0" && btn6.Text == "0" && btn4.Enabled == false && btn5.Enabled == false && btn6.Enabled == false || btn7.Text == "0" && btn8.Text == "0" && btn9.Text == "0" && btn7.Enabled == false && btn8.Enabled == false && btn9.Enabled == false)
+                {
+                    MessageBox.Show(
+                        "0 is wins",
+                        "Result");
+                    DialogResult result = MessageBox.Show(
+                        "Restart ?",
+                        "Message",
+                        MessageBoxButtons.YesNo,
+                        MessageBoxIcon.Information,
+                        MessageBoxDefaultButton.Button1,
+                        MessageBoxOptions.DefaultDesktopOnly);
+                    if (result == DialogResult.Yes)
+                        Application.Restart();
+                    else this.Dispose();
 
+
+                }
+                if (btn1.Text == "X" && btn2.Text == "X" && btn3.Text == "X" && btn1.Enabled == false && btn2.Enabled == false && btn3.Enabled == false || btn4.Text == "X" && btn5.Text == "X" && btn6.Text == "X" && btn4.Enabled == false && btn5.Enabled == false && btn6.Enabled == false || btn7.Text == "X" && btn8.Text == "X" && btn9.Text == "X" && btn7.Enabled == false && btn8.Enabled == false && btn9.Enabled == false)
+
+                {
+
+                    MessageBox.Show(
+                       "X is wins",
+                       "Result");
+                    DialogResult result = MessageBox.Show(
+                        "Restart ?",
+                        "Message",
+                        MessageBoxButtons.YesNo,
+                        MessageBoxIcon.Information,
+                        MessageBoxDefaultButton.Button1,
+                        MessageBoxOptions.DefaultDesktopOnly);
+                    if (result == DialogResult.Yes)
+                        Application.Restart();
+                    else this.Dispose();
+                    ;
+                }
+                if (btn1.Text == "0" && btn4.Text == "0" && btn7.Text == "0" && btn1.Enabled == false && btn4.Enabled == false && btn7.Enabled == false || btn2.Text == "0" && btn5.Text == "0" && btn8.Text == "0" && btn2.Enabled == false && btn5.Enabled == false && btn8.Enabled == false || btn3.Text == "0" && btn6.Text == "0" && btn9.Text == "0" && btn3.Enabled == false && btn6.Enabled == false && btn9.Enabled == false)
+                {
+                    MessageBox.Show(
+                        "0 is wins",
+                        "Result");
+
+                    DialogResult result = MessageBox.Show(
+                        "Restart ?",
+                        "Message",
+                        MessageBoxButtons.YesNo,
+                        MessageBoxIcon.Information,
+                        MessageBoxDefaultButton.Button1,
+                        MessageBoxOptions.DefaultDesktopOnly);
+                    if (result == DialogResult.Yes)
+                        Application.Restart();
+                    else this.Dispose();
+                }
+                if (btn1.Text == "X" && btn4.Text == "X" && btn7.Text == "X" && btn1.Enabled == false && btn4.Enabled == false && btn7.Enabled == false || btn2.Text == "X" && btn5.Text == "X" && btn8.Text == "X" && btn2.Enabled == false && btn5.Enabled == false && btn8.Enabled == false || btn3.Text == "X" && btn6.Text == "X" && btn9.Text == "X" && btn3.Enabled == false && btn6.Enabled == false && btn9.Enabled == false)
+                {
+                    MessageBox.Show(
+                        @"X is wins ",
+                        "Result");
+
+                    DialogResult result = MessageBox.Show(
+                       "Restart ?",
+                       "Message",
+                        MessageBoxButtons.YesNo,
+                        MessageBoxIcon.Information,
+                        MessageBoxDefaultButton.Button1,
+                        MessageBoxOptions.DefaultDesktopOnly);
+                    if (result == DialogResult.Yes)
+                        Application.Restart();
+                    else this.Dispose();
+                }
+                if (btn1.Text == "0" && btn5.Text == "0" && btn9.Text == "0" && btn1.Enabled == false && btn5.Enabled == false && btn9.Enabled == false || btn3.Text == "0" && btn5.Text == "0" && btn7.Text == "0" && btn3.Enabled == false && btn5.Enabled == false && btn7.Enabled == false)
+                {
+                    MessageBox.Show(
+                        @"X is wins ",
+                        "Result");
+
+                    DialogResult result = MessageBox.Show(
+                       "Restart ?",
+                       "Message",
+                        MessageBoxButtons.YesNo,
+                        MessageBoxIcon.Information,
+                        MessageBoxDefaultButton.Button1,
+                        MessageBoxOptions.DefaultDesktopOnly);
+                    if (result == DialogResult.Yes)
+                        Application.Restart();
+                    else this.Dispose();
+                }
+                if (btn1.Text == "X" && btn5.Text == "X" && btn9.Text == "X" && btn1.Enabled == false && btn5.Enabled == false && btn9.Enabled == false || btn3.Text == "X" && btn5.Text == "X" && btn7.Text == "X" && btn3.Enabled == false && btn5.Enabled == false && btn7.Enabled == false)
+                {
+                    MessageBox.Show(
+                        @"X is wins ",
+                        "Result");
+
+                    DialogResult result = MessageBox.Show(
+                       "Restart ?",
+                       "Message",
+                        MessageBoxButtons.YesNo,
+                        MessageBoxIcon.Information,
+                        MessageBoxDefaultButton.Button1,
+                        MessageBoxOptions.DefaultDesktopOnly);
+                    if (result == DialogResult.Yes)
+                        Application.Restart();
+                    else this.Dispose();
+                }
+            };
 
 
         }
